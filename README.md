@@ -1,2 +1,2 @@
 # SociDnevnik
-teams app -> e-dnevnik
+tu ide dokumentacija
