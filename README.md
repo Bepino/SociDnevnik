@@ -4,14 +4,14 @@ Docs za dev, jer CARNET   :)
 ## Potrebno za rad 
 
 #### [Node.js (LTS opciju)](https://nodejs.org/en/download/)
-\   **Zasto?**
+   **Zasto?**\
      └─ Javascript već ućimo, C# ne znam koliko znate, plus node.js ima \
-        više dostupnih paketa pa brže i lakše idu stvari
+        više dostupnih paketa pa brže i lakše idu stvari\
 
-\   **Libraries :**
-     ├─ Node-fetch [ za raditi https zahtjeve ocjene.skole.hr ]
-     ├─ Graph.js   [ za crtanje grafova itd.. ](https://www.chartjs.org/docs/latest/getting-started/installation.html#npm)
-     └─ Neka stvar za pretvarati dobiveni response od ocjene.skole.hr u stranicu iz koje zapravo mozemo uzimat podatke
+   **Libraries :**\
+     ├─ Node-fetch [ za raditi https zahtjeve ocjene.skole.hr ]\
+     ├─ Graph.js   [ za crtanje grafova itd.. ](https://www.chartjs.org/docs/latest/getting-started/installation.html#npm)\
+     └─ Neka stvar za pretvarati dobiveni response od ocjene.skole.hr u stranicu iz koje zapravo mozemo uzimat podatke\
 
 #### [Microsoft Developer E5 račun](https://docs.microsoft.com/en-us/microsoftteams/platform/build-your-first-app/build-first-app-overview#set-up-your-development-account)
 -  Sa CARNET računom se ne može sideloadati aplikacije pa moramo napraviti zasebni Dev račun sa zasebnim (osobnim) e-mailom 
