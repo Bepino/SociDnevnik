@@ -12,8 +12,8 @@ Docs za dev, malo komplicirano jer CARNET.
 
 ### [Microsoft Developer E5 račun](https://docs.microsoft.com/en-us/microsoftteams/platform/build-your-first-app/build-first-app-overview#set-up-your-development-account)
 -  Sa CARNET računom se ne može sideloadati aplikacije pa moramo napraviti zasebni Dev račun sa zasebnim (osobnim) e-mailom (outlook radi, ne znam za ostale)\
-   -  samo prati link , odma te stavi na dio stranice sa tim dijelom, i trebao bi biti drop down
-   \![Slika kako bi dropdown trebao izgledati](https://imgur.com/a/zzrKjdL)
+   -  samo prati link , odma te stavi na dio stranice sa tim dijelom, i trebao bi biti drop down\
+![Slika kako bi dropdown trebao izgledati](https://imgur.com/a/zzrKjdL)
     
 
 ### [VS Code (Notepad na steroidima, potrebno zbog Teams toolkit ekstenzije)](https://code.visualstudio.com) 
