@@ -14,9 +14,9 @@ Docs za dev, malo komplicirano jer CARNET.
     
 
 ### [VS Code (Notepad na steroidima, potrebno zbog Teams toolkit ekstenzije)](https://code.visualstudio.com)
-\\
-    **Extensions:**
-     ├─ Microsoft Teams Toolkit
+\
+    **Extensions:**\
+     ├─ Microsoft Teams Toolkit\
      └─
          
 
