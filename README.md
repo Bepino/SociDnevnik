@@ -1,6 +1,6 @@
 # SociDnevnik
 Docs za dev, jer CARNET   :)
-
+\
 ## Potrebno za rad 
 
 #### [Node.js (LTS opciju)](https://nodejs.org/en/download/)
@@ -25,10 +25,9 @@ Docs za dev, jer CARNET   :)
      └─ HTML CSS Support  » da .css i .html fileovi izgledaju bolje
          
 \
-\
+
 ## Docs / Workflow 
-\
+
 ### Preprouka za rad aplikcaije 
-\
+
 ### git version control 
-\\
