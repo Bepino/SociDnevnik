@@ -32,8 +32,8 @@ Docs za dev, jer CARNET   :)
 Extensions:\
    > Microsoft Teams Toolkit  » Da možemo napraviti app
    >> Debbuger for Edge  » Ovo gore tu ga zahtjeva iz nekog razloga
-   >> Debbuger for Chrome  » Ovo gore tu ga zahtjeva iz nekog razloga
-   > ESLint » Javascript stvar
+   >> Debbuger for Chrome  » Ovo gore tu ga zahtjeva iz nekog razloga\
+   > ESLint » Javascript stvar\
    > HTML CSS Support  » da .css i .html fileovi izgledaju bolje  
 -
 
