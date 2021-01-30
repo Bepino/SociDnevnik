@@ -3,7 +3,7 @@ Docs za dev, jer CARNET   :)
 \
 ## Potrebno za rad 
 
-#### [Node.js (LTS opciju)](https://nodejs.org/en/download/)
+#### [Node.js (LTS)](https://nodejs.org/en/download/)
    **Zašto?**\
       └─ Javascript već ućimo, C# ne znam koliko znate, plus node.js ima
         više dostupnih paketa pa brže i lakše idu stvari
@@ -53,6 +53,7 @@ Ideje i stvari
 
 #### Prije rada napraviti sync 
 \    Tako da se nebi dogodili konflikti kada pushate svoj cod na repo
+    Nije nužno, ali pomaže u životu da ne morate 
 ![Do this](https://imgur.com/B8lxTgD.png "plz I beg of you")
 
 #### Ostalo
@@ -65,3 +66,10 @@ Ideje i stvari
 
 #### Dokumentacija
 > Ne znam jel trebamo source kod dokumentirati ili samo kako koristiti pa to ćemo vidjeti kome pripada ta patnja :)
+
+\
+
+\
+
+> Ako imate pitanja Discord > Whatsapp :))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+> osim ako spavam
