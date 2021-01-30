@@ -14,9 +14,10 @@ Docs za dev, jer CARNET   :)
        └─ Neka stvar za pretvarati dobiveni response od ocjene.skole.hr u stranicu iz koje zapravo mozemo uzimat podatke
 
 #### [Microsoft Developer E5 račun](https://docs.microsoft.com/en-us/microsoftteams/platform/build-your-first-app/build-first-app-overview#set-up-your-development-account)
--  Sa CARNET računom se ne može sideloadati aplikacije na Teams pa moramo napraviti zasebni Dev račun sa zasebnim e-mailom 
-    - outlook radi, ne znam za ostale
-    - samo prati link , odma te stavi na dio stranice sa tim dijelom, i trebao bi biti drop down
+    └─┬ Sa CARNET računom se ne može sideloadati aplikacije na Teams pa moramo napraviti zasebni Dev račun sa zasebnim e-mailom 
+      ├─ outlook radi, ne znam za ostale
+      └─ samo prati link , odma te stavi na dio stranice sa tim dijelom, i trebao bi biti drop down
+      
 ![Slika kako bi dropdown trebao izgledati](https://imgur.com/LagiYU6.png "Izgled drop downa")
 - [Microsoft-365 Dev Dashboard](https://developer.microsoft.com/en-us/microsoft-365/profile/) jer mi se neda bookmarkati
     
