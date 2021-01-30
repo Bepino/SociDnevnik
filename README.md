@@ -10,7 +10,7 @@ Docs za dev, jer CARNET   :)
  Potrebno za rad   | [v1.0.0](#potrebno-za-rad)             | IDE, Node.js, Dev račun
  Rad applikacije   | [v1.0.0](#preprouka-za-rad-aplikcaije) | Flowchart galore, interakicija unutar programa
  Github stvari     | [v1.0.0](#git-version-control)         | Najbolja praksa
- Teams Toolkit env | [v1.0.0]()                             | Kako pokrenuti app lokalno
+ Teams Toolkit env | [v1.0.0](https://github.com/Bepino/SociDnevnik/tree/main/Docs) | Kako pokrenuti app lokalno
 
 - - - -
 ## Potrebno za rad 
