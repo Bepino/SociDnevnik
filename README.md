@@ -38,6 +38,8 @@ Ideje i stvari
 
 ![Flowchart bonanza](https://imgur.com/AZXCa8x.png "Wow!!!")    
 
+> *Edit:* viewer -> tab 
+
 #### Display service
 -   Spaja vizualizacije iz `Add-on-service` i `Fetch-service` podatke u nešto što korisnik zapravo može vidjeti
 
