@@ -1,7 +1,10 @@
 # Postavljanje Teams app za rad
     Mentalna oznaka: "ima još Readme u eDnevnik folderu koje genrira Teams toolkit koji možda pojasne neke stvari bolje"
     
-    Uputstva na MSD ako ovo ne radi (ako budete išli po njima rađe pushajte u ne master branch nego napravite zaseban pa da se ne dogode ne sreće 🙃
+    Uputstva na docs.microsoft ako ovo ne radi (ako budete išli po njima rađe pushajte u ne master branch nego napravite zaseban pa da se ne dogode ne sreće 🙃
+
+https://docs.microsoft.com/en-us/microsoftteams/platform/build-your-first-app/build-and-run#3-build-and-run-your-app\
+
 Sve datoteke bi se treble već nalaziti unutar repositorja u `eDnevnik` folderu. \
 
 Samo trebate unutar Teams Toolkita spremiti aplikaciju negdje i uploadati u Teams\
