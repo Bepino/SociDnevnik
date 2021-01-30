@@ -1,12 +1,9 @@
 # SociDnevnik
 Docs za dev, jer CARNET   :)
-\
+
 ## Potrebno za rad 
 
 #### [Node.js (LTS)](https://nodejs.org/en/download/)
-   **Zašto?**\
-       └─ Javascript već ućimo, C# ne znam koliko znate, plus node.js ima
-          više dostupnih paketa pa brže i lakše idu stvari
 
    **Libraries :**\
        ├─ Node-fetch [ za raditi https zahtjeve ocjene.skole.hr ]\
@@ -55,11 +52,6 @@ Ideje i stvari
 
 
 ### Git version control 
-
-#### Prije rada napraviti sync ili pull 
-Tako da se nebi dogodili konflikti kada pushate svoj cod na repo\
-*Nije nužno, ali pomaže u životu da ne morate kasnije riješavati konflikte pola sata*
-![Do this](https://imgur.com/B8lxTgD.png "plz I beg of you")
 
 #### Ostalo
 -   Ako nadodate neki package (library) nadodaje te ga na listu
