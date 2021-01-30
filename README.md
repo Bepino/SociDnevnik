@@ -49,6 +49,7 @@ Ideje i stvari
 #### Fetch service
 -   dohvaća podatke od ocjene.skole.hr
 -   pretvara ih u nešto korisno za `Add-on-service` i `Display-service`
+\
     ![Fetch service flowchart bonanza](https://imgur.com/y7j01A8.png "Nice!!! very wow!!! :(")
 
 
