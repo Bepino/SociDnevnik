@@ -5,18 +5,19 @@ Docs za dev, jer CARNET   :)
 
 #### [Node.js (LTS)](https://nodejs.org/en/download/)
    **Zašto?**\
-      └─ Javascript već ućimo, C# ne znam koliko znate, plus node.js ima
-        više dostupnih paketa pa brže i lakše idu stvari
+       └─ Javascript već ućimo, C# ne znam koliko znate, plus node.js ima
+          više dostupnih paketa pa brže i lakše idu stvari
 
    **Libraries :**\
-      ├─ Node-fetch [ za raditi https zahtjeve ocjene.skole.hr ]\
-      ├─ Graph.js  [ [ za crtanje grafova itd.. ](https://www.chartjs.org/docs/latest/getting-started/installation.html#npm) ]\
-      └─ Neka stvar za pretvarati dobiveni response od ocjene.skole.hr u stranicu iz koje zapravo mozemo uzimat podatke
+       ├─ Node-fetch [ za raditi https zahtjeve ocjene.skole.hr ]\
+       ├─ Graph.js  [ [ za crtanje grafova itd.. ](https://www.chartjs.org/docs/latest/getting-started/installation.html#npm) ]\
+       └─ Neka stvar za pretvarati dobiveni response od ocjene.skole.hr u stranicu iz koje zapravo mozemo uzimat podatke
 
 #### [Microsoft Developer E5 račun](https://docs.microsoft.com/en-us/microsoftteams/platform/build-your-first-app/build-first-app-overview#set-up-your-development-account)
 -  Sa CARNET računom se ne može sideloadati aplikacije na Teams pa moramo napraviti zasebni Dev račun sa zasebnim e-mailom 
     - outlook radi, ne znam za ostale
-    - samo prati link , odma te stavi na dio stranice sa tim dijelom, i trebao bi biti drop down\ ![Slika kako bi dropdown trebao izgledati](https://imgur.com/LagiYU6.png "Izgled drop downa")
+    - samo prati link , odma te stavi na dio stranice sa tim dijelom, i trebao bi biti drop down
+![Slika kako bi dropdown trebao izgledati](https://imgur.com/LagiYU6.png "Izgled drop downa")
 - [Microsoft-365 Dev Dashboard](https://developer.microsoft.com/en-us/microsoft-365/profile/) jer mi se neda bookmarkati
     
 
@@ -38,7 +39,7 @@ Ideje i stvari
 ![Flowchart bonanza](https://imgur.com/AZXCa8x.png "Wow!!!")    
 
 #### Display service
--   Spaja vizualizacije iz `Add-on-service` i `Fetch-service` u nešto što korisnik zapravo može vidjeti
+-   Spaja vizualizacije iz `Add-on-service` i `Fetch-service` podatke u nešto što korisnik zapravo može vidjeti
 
 #### Add-on service
 -   Stvara grafove i ostale vizualizacije itd..
@@ -51,9 +52,9 @@ Ideje i stvari
 
 ### Git version control 
 
-#### Prije rada napraviti sync 
+#### Prije rada napraviti sync ili pull 
 Tako da se nebi dogodili konflikti kada pushate svoj cod na repo\
-Nije nužno, ali pomaže u životu da ne morate kasnije riješavati konflikte pola sata
+*Nije nužno, ali pomaže u životu da ne morate kasnije riješavati konflikte pola sata*
 ![Do this](https://imgur.com/B8lxTgD.png "plz I beg of you")
 
 #### Ostalo
