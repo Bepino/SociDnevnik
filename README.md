@@ -29,16 +29,16 @@ Docs za dev, jer CARNET   :)
      ├─ ESLint » Javascript stvar
      └─ HTML CSS Support  » da .css i .html fileovi izgledaju bolje 
 
-Extensions:\
-   > Microsoft Teams Toolkit  » Da možemo napraviti app
-   >> Debbuger for Edge  » Ovo gore tu ga zahtjeva iz nekog razloga
-   >> Debbuger for Chrome  » Ovo gore tu ga zahtjeva iz nekog razloga\
-   > ESLint » Javascript stvar\
-   > HTML CSS Support  » da .css i .html fileovi izgledaju bolje  
--
-
 ## Docs / Workflow 
+
+Ideje i stvari
 
 ### Preprouka za rad aplikcaije 
 
+\   ![Flowchart bonanza](https://imgur.com/AZXCa8x.png "Wow!!!")    
+    ![Fetch service flowchart bonanza](https://imgur.com/y7j01A8.png "Nice!!! very wow!!! :(")
+
+
 ### git version control 
+
+#### Prije rada napraviti sync
