@@ -35,7 +35,7 @@ Ideje i stvari
 
 ### Preprouka za rad aplikcaije 
 
-\   ![Flowchart bonanza](https://imgur.com/AZXCa8x.png "Wow!!!")    
+![Flowchart bonanza](https://imgur.com/AZXCa8x.png "Wow!!!")    
 
 #### Display service
 -   Spaja vizualizacije iz `Add-on-service` i `Fetch-service` u nešto što korisnik zapravo može vidjeti
@@ -52,24 +52,22 @@ Ideje i stvari
 ### Git version control 
 
 #### Prije rada napraviti sync 
-\    Tako da se nebi dogodili konflikti kada pushate svoj cod na repo
-    Nije nužno, ali pomaže u životu da ne morate 
+Tako da se nebi dogodili konflikti kada pushate svoj cod na repo
+\ Nije nužno, ali pomaže u životu da ne morate 
 ![Do this](https://imgur.com/B8lxTgD.png "plz I beg of you")
 
 #### Ostalo
 -   Ako nadodate neki package (library) nadodaje te ga na listu
 
 #### Komentirati
-\   Komentirajte kod tako da kada netko drugi gleda kroz njega zbog kojih god razloga ne dobije glavobolju pokušavajući shvatiti šapgete
-    (učite iz mojih patnji od osobe koja je 3 puta krenula raditi discord bot jer je bilo pre komplicirano skužiti špagete)
-\   Ne treba nešto previše samo par riječi da je lagano skužiti što što radi.
+- Komentirajte kod tako da kada netko drugi gleda kroz njega zbog kojih god razloga ne dobije glavobolju pokušavajući shvatiti šapgete
+> (učite iz mojih patnji od osobe koja je 3 puta krenula raditi discord bot jer je bilo pre komplicirano skužiti špagete)
+- Ne treba nešto previše samo par riječi da je lagano skužiti što što radi.
 
 #### Dokumentacija
 > Ne znam jel trebamo source kod dokumentirati ili samo kako koristiti pa to ćemo vidjeti kome pripada ta patnja :)
 
-\
 
-\
+> Ako imate pitanja Discord > Whatsapp :)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))) 
 
-> Ako imate pitanja Discord > Whatsapp :))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
-> osim ako spavam
+`osim ako spavam`
