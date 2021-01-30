@@ -3,7 +3,7 @@ Docs za dev, jer CARNET   :)
 
 > **Za sada najbolje da se fokusiramo samo napraviti tab** na kojem možeš vidjeti ocjene iz e-dnevnika, jer ostalo, kao integracije za davanje ocjena itd.. je ili preteško ili nemoguće za napraviti bez direktnog pristupa CARNET API-u za ocjene.skole.hr i ne možemo samo scrapeati e-dnevnik za učitelje jer nemamo login za učitelje i ne možemo staviti u Teams sa CARNET računom bez da *CARNET odluči žele li da je ova aplikacija dostupna na CARNET Teams app, što najvjerojatnije neće*
 
-Ako preostane vremena možemo vidjeti što možemo još napraviti
+> Ako preostane vremena možemo vidjeti što možemo još napraviti
 
 ## Potrebno za rad 
 
