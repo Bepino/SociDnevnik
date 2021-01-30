@@ -31,14 +31,37 @@ Docs za dev, jer CARNET   :)
 
 ## Docs / Workflow 
 
-Ideje i stvari
+Ideje i stvari 
 
 ### Preprouka za rad aplikcaije 
 
 \   ![Flowchart bonanza](https://imgur.com/AZXCa8x.png "Wow!!!")    
+
+#### Display service
+-   Spaja vizualizacije iz `Add-on-service` i `Fetch-service` u nešto što korisnik zapravo može vidjeti
+
+#### Add-on service
+-   Stvara grafove i ostale vizualizacije itd..
+
+#### Fetch service
+-   dohvaća podatke od ocjene.skole.hr
+-   pretvara ih u nešto korisno za `Add-on-service` i `Display-service`
     ![Fetch service flowchart bonanza](https://imgur.com/y7j01A8.png "Nice!!! very wow!!! :(")
 
 
-### git version control 
+### Git version control 
 
-#### Prije rada napraviti sync
+#### Prije rada napraviti sync 
+\    Tako da se nebi dogodili konflikti kada pushate svoj cod na repo
+![Do this](https://imgur.com/B8lxTgD.png "plz I beg of you")
+
+#### Ostalo
+-   Ako nadodate neki package (library) nadodaje te ga na listu
+
+#### Komentirati
+\   Komentirajte kod tako da kada netko drugi gleda kroz njega zbog kojih god razloga ne dobije glavobolju pokušavajući shvatiti šapgete
+    (učite iz mojih patnji od osobe koja je 3 puta krenula raditi discord bot jer je bilo pre komplicirano skužiti špagete)
+\   Ne treba nešto previše samo par riječi da je lagano skužiti što što radi.
+
+#### Dokumentacija
+> Ne znam jel trebamo source kod dokumentirati ili samo kako koristiti pa to ćemo vidjeti kome pripada ta patnja :)
