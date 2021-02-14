@@ -77,17 +77,17 @@ async function GetPageHtml(username, password) {
   //Backend magija, da znam, mislite nije moguće, kako zanju kada mi je ispit???
   // - MAGIJA !!!
   let ispiti = await page.$('#class-administration-menu > div.class-menu > ul > li:nth-child(3) > a')
-  await GetIspiti(browser, ispiti);
+  dataset.ispiti = await GetInnerHtml(browser, ispiti, '#page-wrapper > div.content-wrapper > div.content');
   console.log('---------------------\nIspiti collected');
 
   //Bilješke
   let bilj = await page.$('#class-administration-menu > div.class-menu > ul > li:nth-child(2) > a')
-  await GetBilj(browser, bilj);
+  dataset.biljeske = await GetInnerHtml(browser, bilj, '#page-wrapper > div.content-wrapper > div');
   console.log('---------------------\nBilješke collected');
 
   //Izostanci
   let izostanci = await page.$('#class-administration-menu > div.class-menu > ul > li:nth-child(4) > a');
-  await GetIzostanci(browser, izostanci);
+  dataset.izostanci = await GetInnerHtml(browser, izostanci, '#page-wrapper > div.content-wrapper > div.content');
   console.log('---------------------\nIzostanci collected');
 
   //Vladanje
@@ -100,7 +100,7 @@ async function GetPageHtml(username, password) {
 
   //saves the gotten html to eDnevnik/src/components/dataset.json
   let stringify = JSON.stringify(dataset);
-  fs.writeFileSync('eDnevnik/src/components/dataset.json', stringify, err => {
+  fs.writeFileSync('eDnevnik/src/components/tempset.json', stringify, err => {
     if (err) {
       console.error(err)
       return
@@ -110,6 +110,7 @@ async function GetPageHtml(username, password) {
   })
 }
 
+//nice and frictionless design
 async function GetInnerHtml(browser, element, selector) {
   const newPagePromise = new Promise(x => browser.once('targetcreated', target => x(target.page())))
   await element.click({button: 'middle'});
@@ -125,59 +126,6 @@ async function GetInnerHtml(browser, element, selector) {
   html = html.replace(/"/g, '\"')
 
   return html;
-}
-
-async function GetIzostanci(browser, element) {
-  const newPagePromise = new Promise(x => browser.once('targetcreated', target => x(target.page())))
-  await element.click({button: 'middle'});
-  const temppage = await newPagePromise;
-
-  //weird thing.. if we don't do this, code breaky break
-  await temppage.screenshot({path: `image.png`})
-
-  let html = await temppage.$eval('#page-wrapper > div.content-wrapper > div.content', (element) => {
-    return element.innerHTML;
-  });
-
-  html = html.replace(/"/g, '\"')
-
-  dataset.izostanci = html;
-}
-
-//All the same but with different selector and storing
-async function GetBilj(browser, element) {
-  const newPagePromise = new Promise(x => browser.once('targetcreated', target => x(target.page())))
-  await element.click({button: 'middle'});
-  const temppage = await newPagePromise;
-
-  //weird thing.. if we don't do this, code breaky break
-  await temppage.screenshot({path: `image.png`})
-
-  let html = await temppage.$eval('#page-wrapper > div.content-wrapper > div', (element) => {
-    return element.innerHTML;
-  });
-
-  html = html.replace(/"/g, '\"')
-
-  dataset.biljeske = html;
-}
-
-async function GetIspiti(browser,element) {
-
-  const newPagePromise = new Promise(x => browser.once('targetcreated', target => x(target.page())))
-  await element.click({button: 'middle'});
-  const temppage = await newPagePromise;
-
-  //weird thing.. if we don't do this, code breaky break
-  await temppage.screenshot({path: `image.png`})
-
-  let html = await temppage.$eval('#page-wrapper > div.content-wrapper > div.content', (element) => {
-    return element.innerHTML;
-  });
-
-  html = html.replace(/"/g, '\"')
-
-  dataset.ispiti = html;
 }
 
 //weird how everything breaks if this isnt in a separete function :|
