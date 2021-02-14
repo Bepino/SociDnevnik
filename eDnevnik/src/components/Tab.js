@@ -62,7 +62,7 @@ class Tab extends React.Component {
     let predmeti = [];
       tempset.predmeti.forEach(element => {
           // eslint-disable-next-line
-          predmeti.push(<li><button id={element[0].replace(/ /g, '-')} onClick={this.handleClick}>{element[0]}</button></li>);
+          predmeti.push(<li key={element[0]}><button id={element[0].replace(/ /g, '-')} onClick={this.handleClick}>{element[0]}</button></li>);
       });;
 
     let menu = <ul>{predmeti}</ul>;
@@ -70,14 +70,14 @@ class Tab extends React.Component {
     
     //Info o učeniku
     ReactDOM.render(<div>
-      <div class="info-name">{tempset.ime} {tempset.prezime}</div>
-      <div class="info-skola">{tempset.razred} | {tempset.skola}</div>
-      <div class="info-razrednik">Razrednik: {tempset.razrednik}</div>
+      <div className="info-name">{tempset.ime} {tempset.prezime}</div>
+      <div className="info-skola">{tempset.razred} | {tempset.skola}</div>
+      <div className="info-razrednik">Razrednik: {tempset.razrednik}</div>
       </div>
       , document.getElementById("user-info"));
 
     //Menu botuni za ispit/bilj/izostanci ...
-    ReactDOM.render(<div class="menu-buttons">
+    ReactDOM.render(<div className="menu-buttons">
       <button onClick={this.HandleClickIspit}>Ispiti</button>
       <button onClick={this.HandleClickBilj}>Bilješke</button>
       <button onClick={this.HandleClickIzost}>Izostanci</button>
@@ -92,7 +92,7 @@ class Tab extends React.Component {
 
     //never put an unnecessary escape character in my life, not even my father
     // eslint-disable-next-line
-    let html = <div class="vladanje" dangerouslySetInnerHTML={{__html : [tempset.vladanja.replace(/\"/g, '"').slice(2, tempset.vladanja.length-2)]}}></div>;
+    let html = <div className="vladanje" dangerouslySetInnerHTML={{__html : [tempset.vladanja.replace(/\"/g, '"').slice(2, tempset.vladanja.length-2)]}}></div>;
 
     ReactDOM.render(html ,document.getElementById('root'))
     ReactDOM.render(<div>Vladanje</div>, document.getElementById('root-header'))
@@ -104,7 +104,7 @@ class Tab extends React.Component {
 
     //never put an unnecessary escape character in my life, not even my father
     // eslint-disable-next-line
-    let html = <div class="izostanci" dangerouslySetInnerHTML={{__html : [tempset.izostanci.replace(/\"/g, '"').slice(2, tempset.izostanci.length-2)]}}></div>;
+    let html = <div className="izostanci" dangerouslySetInnerHTML={{__html : [tempset.izostanci.replace(/\"/g, '"').slice(2, tempset.izostanci.length-2)]}}></div>;
 
     ReactDOM.render(html ,document.getElementById('root'))
     ReactDOM.render(<div>Izostanci</div>, document.getElementById('root-header'))
@@ -116,7 +116,7 @@ class Tab extends React.Component {
 
     //never put an unnecessary escape character in my life, not even my father
     // eslint-disable-next-line
-    let html = <div class="biljeske" dangerouslySetInnerHTML={{__html : [tempset.biljeske.replace(/\"/g, '"').slice(2, tempset.biljeske.length-2)]}}></div>;
+    let html = <div className="biljeske" dangerouslySetInnerHTML={{__html : [tempset.biljeske.replace(/\"/g, '"').slice(2, tempset.biljeske.length-2)]}}></div>;
 
     ReactDOM.render(html ,document.getElementById('root'))
     ReactDOM.render(<div>Bilješke</div>, document.getElementById('root-header'))
@@ -128,7 +128,7 @@ class Tab extends React.Component {
 
     //never put an unnecessary escape character in my life, not even my father
     // eslint-disable-next-line
-    let html = <div class="ispiti" dangerouslySetInnerHTML={{__html : [tempset.ispiti.replace(/\"/g, '"').slice(2, tempset.ispiti.length-2)]}}></div>;
+    let html = <div className="ispiti" dangerouslySetInnerHTML={{__html : [tempset.ispiti.replace(/\"/g, '"').slice(2, tempset.ispiti.length-2)]}}></div>;
 
     ReactDOM.render(html ,document.getElementById('root'))
     ReactDOM.render(<div>Ispiti</div>, document.getElementById('root-header'))
@@ -148,7 +148,7 @@ class Tab extends React.Component {
       });
       // so we get the purest of htmls
       // eslint-disable-next-line
-      let content = <div class="content" dangerouslySetInnerHTML={{__html : [html.replace(/\"/g, '"').slice(1, html.length-1)]}}></div>;
+      let content = <div className="content" dangerouslySetInnerHTML={{__html : [html.replace(/\"/g, '"').slice(1, html.length-1)]}}></div>;
       ReactDOM.render(content, document.getElementById('root'))
 
       let title = <span>{event.target.id.replace(/-/g, ' ')}</span>;
@@ -157,7 +157,7 @@ class Tab extends React.Component {
 
   render() {
       return (
-      <div class="loginpage">
+      <div className="loginpage">
         <h1>NOTE : </h1>
         <form onSubmit={this.handleSubmit}>        
           <label>
