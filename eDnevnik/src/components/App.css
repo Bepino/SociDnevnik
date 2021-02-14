@@ -1,0 +1,204 @@
+.App {
+  text-align: center;
+}
+h1 {
+  color: rgb(0, 0, 0);
+}
+h2 {
+  font-size: .8em;
+}
+.PropName {
+  font-weight: bold;
+  color: #6264A7;
+}
+.Logo {
+  font-size: 45pt;
+  color: #6264A7;
+}
+.Error {
+  color: red;
+}
+
+li {
+  color :rgb(83, 83, 83);
+  list-style-type: none;
+}
+
+.icon-circle.green:before{ 
+  content: "\F111"!important;
+  height: 12px;
+  width: 12px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.icon-circle.gold:before{ 
+  content: "\F111"!important;
+  height: 12px;
+  width: 12px;
+  background-color: gold;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.icon-circle.gray:before{ 
+  content: "\F111"!important;
+  height: 12px;
+  width: 12px;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.icon-circle.black:before{ 
+  content: "\F111"!important;
+  height: 12px;
+  width: 12px;
+  background-color: rgb(12, 1, 1);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.icon-circle.red:before{ 
+  content: "\F111"!important;
+  height: 12px;
+  width: 12px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+button {
+  text-align: left;
+  border: 1px solid round;
+  font-weight: bold;
+  padding: 10px 5px;
+  width: 90%;
+  border: none;
+  background-color: inherit;
+}
+
+button:active {
+  background-color:#585858;
+  border: none;
+}
+
+button:checked{
+  border: none;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+form {
+  width: 50%;
+}
+
+.loginpage {
+  background-color: rgb(240, 240, 240);
+}
+
+.header.first {
+  color:rgb(240, 240, 240);
+  background-color: #58588a !important;
+}
+
+.user-info {
+  color: black;
+  background-color: rgb(158, 157, 157);
+}
+
+.info-name {
+  padding-top: 10px;
+  padding-bottom: 2px;
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+  font-size: x-large;
+  background-color: #818181;
+}
+
+.info-skola {
+  padding-bottom: 2px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+  background-color: #818181;
+}
+
+.info-razrednik {
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-weight: lighter;
+  font-size: medium;
+  background-color: #818181;
+
+}
+
+.ispiti {
+  width: 90%;
+  padding: 2px 5%;
+}
+
+#menu-predmeti #menu-buttons {
+  padding: 10px;
+  padding-left: 3px;
+  align-items: left;
+  position:static;
+}
+
+#menu {
+  right:80%;
+  top: 0px;
+  position: fixed;
+  z-index: 10;
+  background-color: #e2e2e2;
+}
+
+#root-header{
+  top: 0px;
+  left: 20%;
+  width: 80%;
+  font-size:30px;
+  color:white;
+  background-color: #58588a;
+  z-index: 11;
+  position: fixed;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+}
+
+.content {
+  width: 96%;
+}
+
+.ispiti {
+  width: 96%;
+}
+
+.vladanje {
+  width: 96%;
+}
+
+.izostanci {
+  width: 96%;
+}
+
+.biljeske{
+  width: 96%;
+}
+
+#root{
+  top:50px;
+  width: 80% !important;
+  left: 20%;
+  position: relative;
+  padding-left: 50px;
+}
