@@ -158,7 +158,7 @@ class Tab extends React.Component {
   render() {
       return (
       <div className="loginpage">
-        <h1>NOTE : </h1>
+        <h1>DEVELOPMENT VERSION</h1>
         <form onSubmit={this.handleSubmit}>        
           <label>
             E-mail:<br/>
