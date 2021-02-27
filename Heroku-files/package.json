@@ -1,0 +1,29 @@
+{
+  "name": "socidnevnik-heroku",
+  "version": "1.0.0",
+  "description": "Heroku server files for SociDnevnik",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bepino/SociDnevnik-heroku.git"
+  },
+  "author": "SSVV-Blavor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bepino/SociDnevnik-heroku/issues"
+  },
+  "homepage": "https://github.com/Bepino/SociDnevnik-heroku#readme",
+  "dependencies": {
+    "bull": "^3.20.1",
+    "express": "^4.17.1",
+    "pg": "^8.5.1",
+    "puppeteer": "^7.1.0",
+    "redis": "^3.0.2",
+    "throng": "^5.0.0"
+  },
+  "devDependencies": {}
+}
