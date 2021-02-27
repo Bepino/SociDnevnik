@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom'
 import './App.css';
 import * as microsoftTeams from "@microsoft/teams-js";
-import tempset from "./tempset.json"
+import tempset from './tempset.json';
+//let axios = require('axios');
 
 /**
  * The 'GroupTab' component renders the main tab content
@@ -49,18 +50,31 @@ class Tab extends React.Component {
 
   //form submit
   handleSubmit(event) {
-    //content page
     event.preventDefault();
-    let html = tempset.predmeti[0][1];
+    // try{
+    //   let data = {username : this.state.username , password : this.state.password}
+    //   axios.post('https://ssvv-blavor-ednevnik-teams.herokuapp.com/data', data)
+    //     .then(Response => Response.json())
+    //     .then(x => {
+    //       this.setState({tempset: JSON.parse(x)})
+    //   });
+    // } catch(err) {
+    //   ReactDOM.render(<div>Returned 503 : Internal server error<br/>Loading dataset...</div> , document.getElementById('root'));
+    //   this.setState({tempset: tempset});
+    // }
+
+    let dataset = this.state.tempset || tempset;
+
+    let html = dataset.predmeti[0][1];
     //eslint-disable-next-line
     let content = <div dangerouslySetInnerHTML={{__html : [html.replace(/\"/g, '"').slice(2, html.length-2)]}}></div>;
     ReactDOM.render(content, document.getElementById("root"));
 
-    ReactDOM.render(<div>{tempset.predmeti[0][0]}</div>, document.getElementById('root-header'));
+    ReactDOM.render(<div>{dataset.predmeti[0][0]}</div>, document.getElementById('root-header'));
 
     // Predmet botuni
     let predmeti = [];
-      tempset.predmeti.forEach(element => {
+    dataset.predmeti.forEach(element => {
           // eslint-disable-next-line
           predmeti.push(<li key={element[0]}><button id={element[0].replace(/ /g, '-')} onClick={this.handleClick}>{element[0]}</button></li>);
       });;
@@ -70,9 +84,9 @@ class Tab extends React.Component {
     
     //Info o učeniku
     ReactDOM.render(<div>
-      <div className="info-name">{tempset.ime} {tempset.prezime}</div>
-      <div className="info-skola">{tempset.razred} | {tempset.skola}</div>
-      <div className="info-razrednik">Razrednik: {tempset.razrednik}</div>
+      <div className="info-name">{dataset.ime} {dataset.prezime}</div>
+      <div className="info-skola">{dataset.razred} | {dataset.skola}</div>
+      <div className="info-razrednik">Razrednik: {dataset.razrednik}</div>
       </div>
       , document.getElementById("user-info"));
 
@@ -90,9 +104,10 @@ class Tab extends React.Component {
   HandleClickVlad(event) {
     event.preventDefault();
 
+    let dataset = this.state.tempset || tempset;
     //never put an unnecessary escape character in my life, not even my father
     // eslint-disable-next-line
-    let html = <div className="vladanje" dangerouslySetInnerHTML={{__html : [tempset.vladanja.replace(/\"/g, '"').slice(2, tempset.vladanja.length-2)]}}></div>;
+    let html = <div className="vladanje" dangerouslySetInnerHTML={{__html : [dataset.vladanja.replace(/\"/g, '"').slice(2, dataset.vladanja.length-2)]}}></div>;
 
     ReactDOM.render(html ,document.getElementById('root'))
     ReactDOM.render(<div>Vladanje</div>, document.getElementById('root-header'))
@@ -102,9 +117,11 @@ class Tab extends React.Component {
   HandleClickIzost(event) {
     event.preventDefault();
 
+    let dataset = this.state.tempset || tempset;
+
     //never put an unnecessary escape character in my life, not even my father
     // eslint-disable-next-line
-    let html = <div className="izostanci" dangerouslySetInnerHTML={{__html : [tempset.izostanci.replace(/\"/g, '"').slice(2, tempset.izostanci.length-2)]}}></div>;
+    let html = <div className="izostanci" dangerouslySetInnerHTML={{__html : [dataset.izostanci.replace(/\"/g, '"').slice(2, dataset.izostanci.length-2)]}}></div>;
 
     ReactDOM.render(html ,document.getElementById('root'))
     ReactDOM.render(<div>Izostanci</div>, document.getElementById('root-header'))
@@ -114,9 +131,10 @@ class Tab extends React.Component {
   HandleClickBilj(event) {
     event.preventDefault();
 
+    let dataset = this.state.tempset || tempset;
     //never put an unnecessary escape character in my life, not even my father
     // eslint-disable-next-line
-    let html = <div className="biljeske" dangerouslySetInnerHTML={{__html : [tempset.biljeske.replace(/\"/g, '"').slice(2, tempset.biljeske.length-2)]}}></div>;
+    let html = <div className="biljeske" dangerouslySetInnerHTML={{__html : [dataset.biljeske.replace(/\"/g, '"').slice(2, dataset.biljeske.length-2)]}}></div>;
 
     ReactDOM.render(html ,document.getElementById('root'))
     ReactDOM.render(<div>Bilješke</div>, document.getElementById('root-header'))
@@ -126,9 +144,11 @@ class Tab extends React.Component {
   HandleClickIspit(event) {
     event.preventDefault();
 
+    let dataset = this.state.tempset || tempset;
+
     //never put an unnecessary escape character in my life, not even my father
     // eslint-disable-next-line
-    let html = <div className="ispiti" dangerouslySetInnerHTML={{__html : [tempset.ispiti.replace(/\"/g, '"').slice(2, tempset.ispiti.length-2)]}}></div>;
+    let html = <div className="ispiti" dangerouslySetInnerHTML={{__html : [dataset.ispiti.replace(/\"/g, '"').slice(2, dataset.ispiti.length-2)]}}></div>;
 
     ReactDOM.render(html ,document.getElementById('root'))
     ReactDOM.render(<div>Ispiti</div>, document.getElementById('root-header'))
@@ -138,9 +158,11 @@ class Tab extends React.Component {
   handleClick(event) {
       event.preventDefault();
 
+      let dataset = this.state.tempset || tempset;
+
       // uses button id to get what subject we need
       let html;
-      tempset.predmeti.forEach(element => {
+      dataset.predmeti.forEach(element => {
         if(element[0] === event.target.id.replace(/-/g, ' ')) {
           html = element[1];
           return;

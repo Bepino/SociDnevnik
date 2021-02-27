@@ -157,6 +157,7 @@ form {
   right:80%;
   top: 0px;
   position: fixed;
+  scrollbar-width: thin;
   z-index: 10;
   background-color: #e2e2e2;
 }
