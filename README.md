@@ -22,6 +22,7 @@
        ├─ readline (samo za fetch.js ) \
        ├─ fs (samo za fetch.js) \
        ├─ React (uključen u eDnevnik>package.json) \
+       ├─ Axios (uključen u eDnevnik>package.json) \
        ├─ Express (uključen u Heroku>package.json)  
        ├─ Bull (uključen u Heroku>package.json) \
        └─ Throng (uključen u Heroku>package.json) 
