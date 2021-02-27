@@ -21,9 +21,8 @@
        ├─ Puppeteer (fetch.js / Heroku>package.json) \
        ├─ readline (samo za fetch.js ) \
        ├─ fs (samo za fetch.js) \
-       ├─ React (uključen u eDnevnik>package.json) \ 
-       ├─ Microsoft Teams SDK (uključen u eDnevnik>package.json) \ 
-       ├─ Express (uključen u Heroku>package.json) \ 
+       ├─ React (uključen u eDnevnik>package.json) \
+       ├─ Express (uključen u Heroku>package.json)  
        ├─ Bull (uključen u Heroku>package.json) \
        └─ Throng (uključen u Heroku>package.json) 
 
